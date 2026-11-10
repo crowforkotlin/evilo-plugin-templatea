@@ -1,0 +1,30 @@
+{
+  "descriptor": {
+    "id": "crow.evilo.plugin.template",
+    "name": "Template Example",
+    "version": "1.0.0",
+    "versionCode": 1,
+    "kinds": ["novel"],
+    "languages": ["en"],
+    "protocol": {
+      "major": 1,
+      "minimumMinor": 0,
+      "requiredCapabilities": ["media.catalog.v1", "storage.kv.v1"],
+      "optionalCapabilities": []
+    },
+    "permissions": {
+      "api": {"origins": [], "pathPrefixes": ["/"], "methods": ["GET"], "headers": []},
+      "media": {"origins": [], "pathPrefixes": ["/"], "methods": ["GET"], "headers": []},
+      "storage": true
+    }
+  },
+  "catalog": {
+    "authors": [{"name": "evilo contributors"}],
+    "overseas": false,
+    "nsfw": false,
+    "description": "A self-contained SDK example demonstrating novel content and host-owned persistent key/value storage. This is demonstration content, not a real content provider.",
+    "createdAt": "2026-11-09T00:00:00Z",
+    "forceUpdate": false,
+    "minimumUsableVersionCode": 1
+  }
+}
